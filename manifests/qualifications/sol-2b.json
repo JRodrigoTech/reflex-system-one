@@ -1,0 +1,75 @@
+{
+  "backend": "semantic-router",
+  "environment": {
+    "family": "decision-cuda",
+    "lock_sha256": "3cf3e08cb473bc8db804bb827c722a237696d04edba6ecf38c284093177403a3"
+  },
+  "fixtures": [
+    {
+      "actual": "billing",
+      "expected": "billing",
+      "id": "duplicate-invoice-choice",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "refund-requested-noul",
+      "passed": true
+    },
+    {
+      "actual": 0.9925725291164248,
+      "expected": [
+        0.25,
+        1.75
+      ],
+      "id": "duplicate-invoice-score",
+      "passed": true
+    },
+    {
+      "answers": [
+        "noul",
+        "choice",
+        "score"
+      ],
+      "id": "mixed-structured-primitives",
+      "passed": true
+    },
+    {
+      "id": "context-limit-rejection",
+      "limit": 16384,
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "compute_capability": "12.0",
+    "device": "NVIDIA GeForce RTX 5070",
+    "driver": "591.59",
+    "os": "Windows-10-10.0.19045-SP0",
+    "peak_allocated_vram_bytes": 3816986624,
+    "peak_reserved_vram_bytes": 3869245440,
+    "python": "3.12.14",
+    "vram_bytes": 12820480000,
+    "vram_mib": 12227
+  },
+  "model_id": "sol-2b",
+  "passed": true,
+  "precision": "parameters=torch.bfloat16; BF16 CUDA backbone; FP32 CandidateHead; SDPA; one-question batches; FLA Gated DeltaNet",
+  "qualified_utc": "2026-09-27T15:12:43Z",
+  "revision": "60ea30a48285ea097a9b3a728e71649b78331601",
+  "runtime": {
+    "backend_package": "0.5.2",
+    "backend_source_revision": "60ea30a48285ea097a9b3a728e71649b78331601",
+    "cuda": "13.0",
+    "fla_core": "0.5.2",
+    "flash_linear_attention": "0.5.2",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "triton": "3.8.0.post28",
+    "triton_distribution": "triton-windows"
+  },
+  "schema_version": 1,
+  "variant": null
+}

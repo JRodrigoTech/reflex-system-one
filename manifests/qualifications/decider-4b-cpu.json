@@ -1,0 +1,74 @@
+{
+  "backend": "decider",
+  "device": "cpu",
+  "environment": {
+    "family": "decider",
+    "lock_sha256": "d8395210f515325b87f762f263694b6e3a2f49673c3b3eeec84a64f3a75b161f"
+  },
+  "fixtures": [
+    {
+      "actual": "billing",
+      "expected": "billing",
+      "id": "duplicate-invoice-routes-to-billing",
+      "passed": true
+    },
+    {
+      "actual": 0.9546,
+      "expected": true,
+      "id": "duplicate-charge-noul",
+      "passed": true
+    },
+    {
+      "actual": 2.9848015198480153,
+      "expected": 2.0,
+      "id": "blocked-production-score",
+      "passed": true
+    },
+    {
+      "answers": [
+        "noul",
+        "choice",
+        "score"
+      ],
+      "id": "mixed-structured-primitives",
+      "passed": true,
+      "temperature_by_type": {
+        "choice": 1.11,
+        "noul": 1.56,
+        "score": 1.287
+      }
+    },
+    {
+      "id": "context-limit-rejection",
+      "limit": 32768,
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "logical_cpu_count": 24,
+    "os": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.14",
+    "torch_cpu_threads": 16
+  },
+  "model_id": "decider-4b",
+  "passed": true,
+  "precision": "parameters=torch.bfloat16; CPU inference",
+  "qualified_utc": "2026-09-27T21:43:23Z",
+  "revision": "eb5fbdfc9448473ec25e399882912863afbdb70e",
+  "runtime": {
+    "backend_package": "bundled-model-source",
+    "backend_source_revision": "eb5fbdfc9448473ec25e399882912863afbdb70e",
+    "cuda": "13.0",
+    "fla_core": null,
+    "flash_linear_attention": null,
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "triton": null,
+    "triton_distribution": "triton"
+  },
+  "schema_version": 1,
+  "variant": null
+}

@@ -1,0 +1,78 @@
+{
+  "backend": "laya",
+  "device": "cpu",
+  "environment": {
+    "family": "laya",
+    "lock_sha256": "d2b8cd85204900e120480b991600b00315ada4257bf8303d1af7e22d9cf2dcb8"
+  },
+  "fixtures": [
+    {
+      "id": "startup-readiness-preparation",
+      "passed": true
+    },
+    {
+      "actual": "account",
+      "expected": "account",
+      "id": "english-account-access",
+      "passed": true
+    },
+    {
+      "actual": "billing",
+      "expected": "billing",
+      "id": "english-duplicate-charge",
+      "passed": true
+    },
+    {
+      "expected": true,
+      "id": "english-refund-request-noul",
+      "passed": true,
+      "probability": 0.7298
+    },
+    {
+      "id": "eleven-option-choice-runtime-fallback",
+      "passed": true,
+      "probability_calibration": "upstream marks choice:11+ confidence uncalibrated"
+    },
+    {
+      "answers": [
+        "noul",
+        "choice",
+        "score"
+      ],
+      "id": "mixed-structured-primitives",
+      "passed": true,
+      "structured_inputs": true
+    },
+    {
+      "id": "configured-context-rejection",
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "logical_cpu_count": 24,
+    "os": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "python": "3.12.14",
+    "torch_cpu_threads": 16
+  },
+  "model_id": "laya",
+  "passed": true,
+  "precision": "parameters=torch.float32; CPU inference",
+  "qualified_utc": "2026-09-28T00:31:55Z",
+  "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "runtime": {
+    "backend_package": "0.3.20",
+    "backend_source_revision": null,
+    "cuda": "13.0",
+    "fla_core": null,
+    "flash_linear_attention": null,
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "triton": null,
+    "triton_distribution": "triton"
+  },
+  "schema_version": 1,
+  "variant": "english"
+}

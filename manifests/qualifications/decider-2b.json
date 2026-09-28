@@ -1,0 +1,77 @@
+{
+  "backend": "decider",
+  "environment": {
+    "family": "decider",
+    "lock_sha256": "89c5ff87097eb35021777badcd24f4b1cb64edcd5c7c61e20e83b2f1b02b34de"
+  },
+  "fixtures": [
+    {
+      "actual": "billing",
+      "expected": "billing",
+      "id": "duplicate-invoice-routes-to-billing",
+      "passed": true
+    },
+    {
+      "actual": 0.595,
+      "expected": true,
+      "id": "duplicate-charge-noul",
+      "passed": true
+    },
+    {
+      "actual": 2.924392439243924,
+      "expected": 2.0,
+      "id": "blocked-production-score",
+      "passed": true
+    },
+    {
+      "answers": [
+        "noul",
+        "choice",
+        "score"
+      ],
+      "id": "mixed-structured-primitives",
+      "passed": true,
+      "temperature_by_type": {
+        "choice": 1.164,
+        "noul": 1.624,
+        "score": 1.124
+      }
+    },
+    {
+      "id": "context-limit-rejection",
+      "limit": 32768,
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "compute_capability": "12.0",
+    "device": "NVIDIA GeForce RTX 5070",
+    "driver": "591.59",
+    "os": "Windows-10-10.0.19045-SP0",
+    "peak_allocated_vram_bytes": 4000060928,
+    "peak_reserved_vram_bytes": 4068474880,
+    "python": "3.12.14",
+    "vram_bytes": 12820480000,
+    "vram_mib": 12227
+  },
+  "model_id": "decider-2b",
+  "passed": true,
+  "precision": "parameters=torch.bfloat16; eager; CUDA graphs disabled",
+  "qualified_utc": "2026-09-27T04:33:59Z",
+  "revision": "533964dae8be954c5b5e19fa4948e48408094c1e",
+  "runtime": {
+    "backend_package": "bundled-model-source",
+    "backend_source_revision": "533964dae8be954c5b5e19fa4948e48408094c1e",
+    "cuda": "13.0",
+    "fla_core": null,
+    "flash_linear_attention": null,
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "triton": null,
+    "triton_distribution": "triton"
+  },
+  "schema_version": 1,
+  "variant": null
+}

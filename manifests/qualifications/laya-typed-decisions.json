@@ -1,0 +1,63 @@
+{
+  "backend": "laya",
+  "device": "cuda",
+  "environment": {
+    "family": "laya",
+    "lock_sha256": "d2b8cd85204900e120480b991600b00315ada4257bf8303d1af7e22d9cf2dcb8"
+  },
+  "fixtures": [
+    {
+      "id": "startup-readiness-preparation",
+      "passed": true
+    },
+    {
+      "answers": [
+        "noul",
+        "choice",
+        "score"
+      ],
+      "id": "mixed-structured-primitives",
+      "passed": true,
+      "probability_calibration": "not evaluated; no validation dataset supplied",
+      "structured_inputs": true
+    },
+    {
+      "id": "configured-context-rejection",
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "compute_capability": "12.0",
+    "device": "NVIDIA GeForce RTX 5070",
+    "driver": "616.92",
+    "os": "Windows-10-10.0.19045-SP0",
+    "peak_allocated_vram_bytes": 2467425280,
+    "peak_reserved_vram_bytes": 2684354560,
+    "python": "3.12.14",
+    "vram_bytes": 12792037376,
+    "vram_mib": 12227
+  },
+  "limitations": [
+    "Runtime and output-contract checks do not evaluate statistical probability calibration; no validation dataset was supplied."
+  ],
+  "model_id": "laya",
+  "passed": true,
+  "precision": "parameters=torch.float32; autocast=torch.bfloat16",
+  "qualified_utc": "2026-09-28T01:34:32Z",
+  "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "runtime": {
+    "backend_package": "0.3.20",
+    "backend_source_revision": null,
+    "cuda": "13.0",
+    "fla_core": null,
+    "flash_linear_attention": null,
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "triton": null,
+    "triton_distribution": "triton"
+  },
+  "schema_version": 1,
+  "variant": "typed-decisions"
+}

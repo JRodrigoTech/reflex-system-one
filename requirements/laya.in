@@ -1,0 +1,6 @@
+-r core.in
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu130
+laya==0.3.20
+torch==2.14.0+cu130
+transformers==5.17.0

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-server"
+version = "0.1.0"
+description = "Windows-first local server for typed decision models"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = { file = "LICENSE" }
+dependencies = ["fastapi==0.141.1", "uvicorn==0.54.0", "huggingface-hub==1.33.0"]
+
+[project.optional-dependencies]
+dev = ["httpx==0.28.1", "pytest==9.1.1", "pytest-asyncio==1.4.0"]
+
+[project.scripts]
+reflex = "reflex.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["reflex*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+  "integration: uses local processes, real sockets, or installed environments",
+  "qualification: loads a real model and requires the selected GPU/runtime",
+]

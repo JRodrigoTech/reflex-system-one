@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "staging_margin_bytes": 2147483648,
+  "environments": {
+    "core": {
+      "lock_file": "requirements/core.lock",
+      "sha256": "b4eeb4a295d64c194c49c1a99777a113a5da5bd03bb9b35e1f90deba2acaa51b",
+      "estimated_unpacked_bytes": 57144622
+    },
+    "laya": {
+      "lock_file": "requirements/laya.lock",
+      "sha256": "d2b8cd85204900e120480b991600b00315ada4257bf8303d1af7e22d9cf2dcb8",
+      "estimated_unpacked_bytes": 3407032246
+    },
+    "decider": {
+      "lock_file": "requirements/decider.lock",
+      "sha256": "d8395210f515325b87f762f263694b6e3a2f49673c3b3eeec84a64f3a75b161f",
+      "estimated_unpacked_bytes": 3406058756
+    },
+    "decision-cuda": {
+      "lock_file": "requirements/decision-cuda.lock",
+      "sha256": "3cf3e08cb473bc8db804bb827c722a237696d04edba6ecf38c284093177403a3",
+      "estimated_unpacked_bytes": 3575267093
+    }
+  },
+  "python": {
+    "version": "3.12.14",
+    "release": "20260901",
+    "platform": "x86_64-pc-windows-msvc",
+    "estimated_unpacked_bytes": 65471062,
+    "archive": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14%2B20260901-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+    "sha256": "7c45c9622400d578709a9b2cddbe8124cc21d382409d9f13406d706d28e31b14",
+    "layout": "python"
+  }
+}
