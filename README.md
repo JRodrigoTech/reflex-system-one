@@ -95,88 +95,90 @@ The response contains the active model, typed answers, probabilities where appli
 <table>
   <thead>
     <tr>
+      <th colspan="2">Models</th>
+      <th rowspan="2">Upstream model</th>
+      <th rowspan="2">Devices</th>
+      <th rowspan="2">Approx. checkpoint<br>/ observed VRAM</th>
+      <th rowspan="2">State</th>
+    </tr>
+    <tr>
       <th>Reflex ID</th>
-      <th>Upstream model</th>
-      <th>Devices</th>
       <th>Variant</th>
-      <th>Approx. checkpoint / observed VRAM</th>
-      <th>State</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td rowspan="3"><code>laya</code></td>
-      <td rowspan="3">
-        <a href="https://huggingface.co/convaiinnovations/laya">
-          convaiinnovations/laya
-        </a>
-      </td>
-      <td rowspan="3">CPU / CUDA</td>
       <td>multilingual</td>
-      <td>~0.60 GiB file / ~1.52 GiB VRAM</td>
+      <td rowspan="3">
+        <a href="https://huggingface.co/convaiinnovations/laya">convaiinnovations/laya</a>
+      </td>
+      <td rowspan="3">CPU<br>CUDA</td>
+      <td>~0.60 GiB file<br>~1.52 GiB VRAM</td>
       <td rowspan="3"><strong>Supported</strong></td>
     </tr>
     <tr>
       <td>english</td>
-      <td>~0.79 GiB file / ~2.50 GiB VRAM</td>
+      <td>~0.79 GiB file<br>~2.50 GiB VRAM</td>
     </tr>
     <tr>
       <td>typed-decisions</td>
-      <td>~0.78 GiB file / ~2.50 GiB VRAM</td>
+      <td>~0.78 GiB file<br>~2.50 GiB VRAM</td>
     </tr>
     <tr>
-      <td><code>decider-2b</code></td>
+      <td colspan="2"><code>decider-2b</code></td>
       <td>
         <a href="https://huggingface.co/Mapika/decider-2b">
           Mapika/decider-2b
         </a>
       </td>
-      <td>CPU / CUDA</td>
-      <td colspan="2">~3.51 GiB file / ~3.79 GiB VRAM</td>
+      <td>CPU<br>CUDA</td>
+      <td>~3.51 GiB file<br>~3.79 GiB VRAM</td>
       <td><strong>Supported</strong></td>
     </tr>
     <tr>
-      <td><code>decider-4b</code></td>
+      <td colspan="2"><code>decider-4b</code></td>
       <td>
         <a href="https://huggingface.co/Mapika/decider-4b">
           Mapika/decider-4b
         </a>
       </td>
-      <td>CPU / CUDA</td>
-      <td colspan="2">~7.83 GiB file / ~8.44 GiB VRAM</td>
+      <td>CPU<br>CUDA</td>
+      <td>~7.83 GiB file<br>~8.44 GiB VRAM</td>
       <td><strong>Supported</strong></td>
     </tr>
     <tr>
-      <td><code>sol-2b</code></td>
+      <td colspan="2"><code>sol-2b</code></td>
       <td>
         <a href="https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B">
           .../Decision-1.0-Sol-2B
         </a>
       </td>
       <td>CUDA</td>
-      <td colspan="2">~3.60 GiB VRAM</td>
+      <td>~3.60 GiB VRAM</td>
       <td><strong>Supported</strong></td>
     </tr>
     <tr>
-      <td><code>nox-4b</code></td>
+      <td colspan="2"><code>nox-4b</code></td>
       <td>
         <a href="https://huggingface.co/llm-semantic-router/Decision-1.0-Nox-4B">
           .../Decision-1.0-Nox-4B
         </a>
       </td>
       <td>CUDA</td>
-      <td colspan="2">~8.00 GiB VRAM</td>
+      <td>~8.00 GiB VRAM</td>
       <td><strong>Supported</strong></td>
     </tr>
     <tr>
-      <td><code>lux-9b</code></td>
+      <td colspan="2"><code>lux-9b</code></td>
       <td>
         <a href="https://huggingface.co/llm-semantic-router/Decision-1.0-Lux-9B">
           .../Decision-1.0-Lux-9B
         </a>
       </td>
       <td>CUDA</td>
-      <td colspan="2">~14.82 GiB BF16 weights</td>
+      <td>~14.82 GiB BF16 weights</td>
       <td><strong>Experimental</strong></td>
     </tr>
   </tbody>
